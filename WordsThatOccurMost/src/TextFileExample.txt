@@ -1,0 +1,58 @@
+Shazam Entertainment, Ltd. was started in 2000 with the
+idea of providing a service that could connect people to
+music by recognizing music in the environment by using
+their mobile phones to recognize the music directly. The
+algorithm had to be able to recognize a short audio sample
+of music that had been broadcast, mixed with heavy
+ambient noise, subject to reverb and other processing,
+captured by a little cellphone microphone, subjected to
+voice codec compression, and network dropouts, all before
+arriving at our servers. The algorithm also had to perform
+the recognition quickly over a large database of music with
+nearly 2M tracks, and furthermore have a low number of
+false positives while having a high recognition rate.
+This was a hard problem, and at the time there were no
+algorithms known to us that could satisfy all these
+constraints. We eventually developed our own technique
+that met all the operational constraints [1].
+We have deployed the algorithm to scale in our commercial
+music recognition service, with over 1.8M tracks in the
+database. The service is currently live in Germany,
+Finland, and the UK, with over a half million users, and
+will soon be available in additional countries in Europe,
+Asia, and the USA. The user experience is as follows: A
+user hears music playing in the environment. She calls up
+our service using her mobile phone and samples up to 15
+seconds of audio. An identification is performed on the
+sample at our server, then the track title and artist are sent
+back to the user via SMS text messaging. The information
+is also made available on a web site, where the user may
+register and log in with her mobile phone number and
+password. At the web site, or on a smart phone, the user
+may view her tagged track list and buy the CD. The user
+may also download the ringtone corresponding to the
+tagged track, if it is available. The user may also send a
+30-second clip of the song to a friend. Other services, such
+as purchasing an MP3 download may become available
+soon.
+A variety of similar consumer services has sprung up
+recently. Musiwave has deployed a similar mobile-phone
+music identification service on the Spanish mobile carrier
+Amena using Philips’ robust hashing algorithm [2-4].
+Using the algorithm from Relatable, Neuros has included a
+sampling feature on their MP3 player which allows a user
+to collect a 30-second sample from the built-in radio, then
+later plug into an online server to identify the music [5,6].
+Audible Magic uses the Muscle Fish algorithm to offer the
+Clango service for identifying audio streaming from an
+internet radio station [7-9].
+The Shazam algorithm can be used in many applications
+besides just music recognition over a mobile phone. Due to
+the ability to dig deep into noise we can identify music
+hidden behind a loud voiceover, such as in a radio advert.
+On the other hand, the algorithm is also very fast and can
+be used for copyright monitoring at a search speed of over
+1000 times realtime, thus enabling a modest server to
+monitor significantly many media streams. The algorithm
+is also suitable for content-based cueing and indexing for
+library and archival uses.
